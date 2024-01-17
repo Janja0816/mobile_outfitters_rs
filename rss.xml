@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <rss version="2.0">
+    <channel>
+        <title>Mobile Outfitters</title>
+        <link>https://mobfitters.000webhostapp.com/index.html</link>
+        <description>Najbolja zaštita za mobilne telefone</description>
+        
+        <item>
+            <title>Cenovnik</title>
+            <link>https://mobfitters.000webhostapp.com/stranice/cenovnik.html</link>
+            <description>Ovo su cene proizvoda i biće ažurirane sa vremena na vreme</description>
+        </item>
+        <item>
+            <title>Style Skins</title>
+            <link>hhttps://mobfitters.000webhostapp.com/stranice/skins.html</link>
+            <description>Style skins folije koje imamo, i biće dodate nove ukoliko ih dobijemo</description>
+        </item>
+    </channel>
+ </rss> 
