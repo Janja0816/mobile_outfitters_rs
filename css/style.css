@@ -1,0 +1,701 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Heebo', Arial, sans-serif;
+    font-size:20px;
+}
+.wrapper {
+    margin:0px auto;
+    width:1200px;
+}
+img {
+    vertical-align: bottom;
+}
+header  {
+    background-color: rgb(0, 51, 119);
+}
+.logo img {
+    width: 140px;
+    border-radius: 20px;
+}
+header .logo img {
+    padding:5px 0 5px 0;
+}
+#autorSajta span a {
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+}
+#autorSajta span a:link,
+#autorSajta span a:visited {
+    text-decoration: none;
+    color:#FFF;
+}
+#autorSajta span a:hover {
+    background-color:rgb(0, 51, 119);
+}
+#autorSajta span a:active {
+    background-color:rgb(2, 42, 95);
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header ul li {
+    position:relative;
+}
+header .fas {
+    position: absolute;
+    top:20px;
+    right:5px;
+}
+header ul li a {
+    display: block;
+    padding: 24px;
+    font-size: 24px;
+    line-height: 23px;
+}
+header ul li a:link,
+header ul li a:visited {
+    color:#FFF;
+    text-decoration: none;
+}
+header ul li a:hover {
+    background-color: rgba(211, 211, 211, 0.335);
+    border-bottom: 2px solid #FFF;
+}
+header ul li a:active {
+    background-color: rgba(211, 211, 211, 0.185);
+}
+nav ul li ul {
+    position: absolute;
+    top:100%;
+    left:0px;
+    width:300px;
+    display: none;
+}
+nav ul li ul li a:link,
+nav ul li ul li a:visited {
+    text-decoration: none;
+}
+nav ul li:hover ul {
+    display: block;
+    background-color: rgb(0, 51, 119);
+    z-index: 50;
+    line-height: normal;
+}
+#social a:link,
+#social a:visited {
+    color:rgba(255, 255, 255, 0.876);
+    text-decoration: none;
+}
+#social a:hover {
+    color:rgb(47, 112, 197);
+}
+#social a:active {
+    color:rgb(26, 87, 167);
+}
+.mreze {
+    font-size: 26px;
+    padding: 23px 2px 23px 2px;
+}
+
+/*Uvod Index strane */
+#uvod {
+    background-image: url(../slike/bluephones.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 95px 0 95px 0;
+    position:relative;
+}
+#uvod .wrapper {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width:1400px;
+}
+#uvodniTekst {
+    background-color: rgba(0, 0, 0, 0.705);
+    border: 2px solid #FFF;
+    width:500px;
+    color:#FFF;
+    border-radius: 20px;
+    padding: 10px;
+    margin:0px auto;
+    margin-bottom: 20px;
+}
+#miniTekst {
+    font-size: larger;
+    margin-top:20px;
+}
+#uvod span a {
+    display: block;
+    color:#FFF;
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 10px;
+    border:1px solid white;
+    border-radius: 20px;
+    width:140px;
+    margin:10px auto;
+    font-size: larger;
+}
+#uvod span a:link,
+#uvod span a:visited {
+    text-decoration: none;
+    border: 2px solid #FFF;
+}
+#uvod span a:hover {
+    background-color: rgb(0, 51, 119);
+}
+#uvod span a:active {
+    background-color:rgb(3, 38, 83);
+}
+.video {
+    height:400px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+/*slider Main*/
+#textInst h2 {
+    width:400px;
+    background-color: rgba(0, 0, 0, 0.493);
+    color:#FFF;
+    margin:0px auto 20px;
+    padding: 10px;
+    border:1px solid white;
+    border-radius: 20px;
+}
+#galerija {
+    padding-top: 10px;
+}
+#pictSlide {
+    height: 500px;
+    width:600px;
+    border-radius: 20px;
+    background-image: url(../slike/animationPict/1.jpg);
+    animation: slide 30s infinite;
+}
+@keyframes slide {
+    25%{
+        background-image: url(../slike/animationPict/2.jpg);
+    }
+    50%{
+        background-image: url(../slike/animationPict/3.jpg);
+    }
+    75%{
+        background-image: url(../slike/animationPict/4.jpg);
+    }
+    100%{
+        background-image: url(../slike/animationPict/5.jpg);
+    }
+}
+
+/*glavneFolije na index strani*/
+#glavneFolije span a {
+    display: block;
+    padding: 5px;
+    width:150px;
+    margin:0 auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px solid #FFF;
+}
+#glavneFolije span a:link,
+#glavneFolije span a:visited {
+    text-decoration: none;
+    color:#FFF;
+}
+#glavneFolije span a:link:hover {
+    background-color: rgba(128, 128, 128, 0.671);
+}
+/*span za sve textove folija i proizvoda*/
+.spanTeksta a {
+    display: block;
+    padding: 5px;
+    width:150px;
+    margin:0 auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color:rgba(0, 0, 0, 0.575);
+    border: 2px solid #FFF;
+}
+.spanTeksta a:link,
+.spanTeksta a:visited {
+    text-decoration: none;
+    color:#FFF;
+    font-weight: 600;
+}
+.spanTeksta a:hover {
+    background-color: rgb(47, 112, 197);
+}
+.tekstMain {
+    padding: 30px;
+    color:#FFF
+}
+#clearCoat {
+    background-image: url(../slike/blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clearCoatFlex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../slike/Clear-Cote-Original.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    height: 630px;
+    position:relative;
+}
+#matte {
+    background-image: url(../slike/yellow-blue-blurry-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.matteflex {
+    display: flex;
+    justify-content: center;
+    background-image: url(../slike/Clear-Coat-Matte.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius: 20px;
+    height: 630px;
+    align-items: center;
+    position:relative;
+    text-align: center;
+}
+#fusion {
+    background-image: url(../slike/abstract-red-blue-blur-4k-yt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fusionflex {
+    text-align: center;
+    position: relative;
+    background-image: url(../slike/fusionn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 630px;
+    font-weight:bold;
+}
+.textFolija h1 {
+    margin-bottom: 10px;
+}
+.textFolija {
+    position:absolute;
+    top:70px;
+    left:30px;
+    display: block;
+    width:450px;
+    font-weight: 400;
+    background-color:rgba(0, 0, 0, 0.431);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: larger;
+}
+.textFolija .inputi a {
+    display: inline-block;
+    color:#FFF;
+    padding: 5px;
+    text-decoration: none;
+    border:1px solid white;
+    width:150px;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    margin-top: 20px;
+}
+.textFolija span a:hover {
+    background-color:rgb(30, 102, 195);
+}
+.textFolija span a:active {
+    background-color:rgb(26, 91, 177);
+}
+
+/*partnerstvo deo */
+#partnerstvo {
+    padding: 80px 0px 80px 0px;
+    background-image: url(../slike/partner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#partnerstvo .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#tekstPartner {
+    background-color:rgba(0, 0, 0, 0.87);
+    color:#FFF;
+    width:500px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+#tekstPartner p {
+    font-size: 23px;
+}
+#tekstPartner h1 {
+    margin-bottom: 10px;
+}
+.iconsPartnership {
+    font-size: 30px;
+}
+#partnerPart {
+    width:460px;
+    text-align: left;
+    background-color:rgba(0, 0, 0, 0.87);
+    padding: 30px;
+    color:#FFF;
+    border-radius: 20px;
+}
+#text {
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 20px;
+    min-width: 100%;
+}
+input {
+    height: 22px;
+    font-size: 20px;
+    display:inline-block;
+    min-width: 100%;
+}
+input[type="submit"] {
+    background-color: rgb(0, 51, 119);
+    margin-bottom: 5px;
+}
+input[type="reset"] {
+    background-color: rgb(39, 39, 39);
+}
+input[type="submit"], input[type="reset"]{
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100%;
+    color:#FFF;
+    width:464px;
+    height: 30px;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    background-color: rgba(1, 27, 61, 0.931);
+}
+input[type="reset"]:hover {
+    background-color: rgba(31, 31, 31, 0.473);
+}
+footer {
+    background-color: rgb(0, 51, 119);
+    padding: 10px;
+}
+
+/*footer*/
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+footer ul{
+    list-style: none;
+    color:#FFF;
+}
+footer ul a:link,
+footer ul a:visited {
+    text-decoration: none;
+    color:#FFF;
+}
+footer ul a:hover {
+    color:rgb(47, 112, 197);
+}
+footer ul a:active {
+    color:rgb(48, 107, 184);
+}
+.ikonsFooter {
+    font-size: larger;
+}
+#rss img {
+    width:60px;
+}
+#sitemap img {
+    width:45px;
+}
+
+/*Cenovnik*/
+#centar {
+    background-image:url(../slike/products.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#centar .wrapper{
+    padding: 110px 0px 110px 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#tabelaCene {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    color:#FFF;
+    border-radius: 10px;
+}
+#tabelaCene tr td,#tabelaCene tr th {
+    padding: 5px;
+}
+caption h1 {
+    background-color:rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+}
+#smernice {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+}
+#smernice table {
+    color:#FFF;
+    background-color:rgba(0, 0, 0, 0.726);
+}
+#smernice table tr td {
+    padding: 3px;
+}
+
+/*Autor*/
+#glavniDeo {
+    background-image: url(../slike/riverBelgrade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0 35px 0;
+}
+#glavniDeo img {
+    height: 600px;
+    border-radius: 20px;
+}
+#glavniDeo .wrapper {
+    padding: 82px 0px 82px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+}
+#biografija {
+    background-color: rgba(0, 0, 0, 0.842);
+    color:#FFF;
+    width:600px;
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+    border:2px solid #FFF;
+    text-align: center;
+}
+#biografija span {
+    position: absolute;
+    border:2px solid #FFF;
+    bottom:-65px;
+    left:196px;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 30px;
+    padding: 10px;
+}
+#biografija h1 {
+    font-size: 35px;
+}
+
+/* Galerija */
+#galerijaSlika .wrapper {
+    padding: 80px 0px 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#galerijaSlika .wrapper img {
+    width:400px;
+    height: 400px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+#galerijaSlika .wrapper img:hover {
+    opacity: 1;
+}
+abbr {
+    font-size: 25px;
+}
+
+/* Original */
+#mainOriginal {
+    background-image: url(../slike/blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0px 90px 0px;
+}
+#mainOriginal .wrapper {
+    background-image: url(../slike/Clear-Cote-Original.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    position:relative;
+    border-radius: 20px;
+}
+.veciTekst {
+    display: block;
+    position: absolute;
+    width:600px;
+    background-color:rgba(0, 0, 0, 0.575);
+    text-align: center;
+    color:#FFF;
+    padding: 10px;
+    border-radius: 20px;
+    top:30px;
+    left:50px;
+    font-size: larger;
+    border: 2px solid #FFF;
+}
+
+/*Matte*/
+#mainMatte {
+    background-image: url(../slike/yellow-blue-blurry-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0px 90px 0px;
+}
+#mainMatte .wrapper {
+    background-image: url(../slike/Clear-Coat-Matte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    position:relative;
+    border-radius: 20px;
+}
+
+/*Fusion*/
+
+#mainFusion {
+    background-image: url(../slike/abstract-red-blue-blur-4k-yt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0px 90px 0px;
+}
+#mainFusion .wrapper {
+    background-image: url(../slike/fusionn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    position:relative;
+    border-radius: 20px;
+}
+
+/* Pruvia */
+
+#mainPruvia {
+    background-image: url(../slike/Pruvia-Social.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0px 90px 0px;
+}
+#mainPruvia .wrapper {
+    height: 630px;
+    position:relative;
+    border-radius: 20px;
+}
+#mainPruvia .veciTekst {
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+/* Skins*/
+
+#mainSkins {
+    background-color: rgb(146, 146, 146);
+    padding: 90px 0px 90px 0px;
+    background-image: url(../slike/colors.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mainSkins .wrapper {
+    height: 630px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+#mainSkins .veciTekst {
+    position: relative;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+#paletaBoja {
+    background-color: rgba(0, 0, 0, 0.781);
+    border:2px solid #FFF;
+    padding: 20px;
+    text-align: center;
+    color:#FFF;
+    width: 300px;
+    border-radius: 20px;
+}
+#paletaBoja h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#paletaBoja img {
+    border-radius: 20px;
+    opacity: 0.8;
+}
+#paletaBoja img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Bumper */
+
+#mainBumper{
+    background-color: rgb(221, 205, 195);
+    padding: 90px 0px 90px 0px;
+}
+#mainBumper .wrapper {
+    background-image: url(../slike/Fusion-Bumper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    position:relative;
+    border-radius: 20px;
+}
+#mainBumper .veciTekst {
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+/*lokacije*/
+.map iframe{
+    border-radius: 20px;
+}
+#mapsFitters {
+    background-image:url(../slike/mapss.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+}
+
+#mapsFitters .wrapper {
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.textMaps {
+    background-color:rgba(0, 0, 0, 0.678);
+    flex-basis:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+
